@@ -1,10 +1,10 @@
 import logo from '../assets/logo.png';
-import './Main.css';
+import "../styles/Main.scss";
 
 function Main() {
   return (
-    <div className="Main">
-      <header className="Main-header">
+    <div>
+      <header className="header">
         <img src={logo} className="Main-logo" alt="logo" />
         <p>
           Transportteenused üle Eesti

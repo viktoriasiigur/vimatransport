@@ -1,0 +1,11 @@
+@import './colors.scss';
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 40px;
+  width: 300px;
+  margin: 0 auto;
+  color: $black;
+}
