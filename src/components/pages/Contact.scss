@@ -1,0 +1,23 @@
+@import "../../styles/colors.scss";
+
+.Contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  padding-top: 70px;
+}
+
+.Contact-table {
+  font-size: 16px;
+  font-weight: 500;
+
+  th {
+    text-align: start;
+    color: $blue;
+    font-weight: 700;
+    min-width: 120px;
+    line-height: 30px;
+  }
+}

@@ -1,8 +1,4 @@
-@import "../../styles/colors.scss";
-
-.Main {
-  text-align: center;
-}
+@import '../../styles/colors.scss';
 
 .Main-logo {
   height: 40vmin;
@@ -17,6 +13,36 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: $white;
+}
+
+.Main-description {
+  margin: 50px auto;
+}
+
+.Main-link {
+  font-size: 17px;
+  font-weight: 500;
+  background-color: $blue;
+  height: 50px;
+  width: 150px;
+  border-radius: 50px;
+  border: 1px solid $white;
+
+  &:hover {
+    background-color: $hover-blue;
+    cursor: pointer;
+  }
+
+  a {
+    line-height: 50px;
+    &:link,
+    &:visited,
+    &:hover
+    &:active {
+      text-decoration: none;
+      color: $white;
+    }
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
