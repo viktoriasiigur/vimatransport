@@ -1,11 +1,10 @@
-import React from "react";
-import Navbar from "./Navbar";
-import Main from "./Main";
-import About from "./About";
-import Contact from "./Contact";
+import React from 'react';
+import Navbar from './components/UI/Navbar';
+import Main from './components/pages/Main';
+import About from './components/pages/About';
+import Contact from './components/pages/Contact';
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (

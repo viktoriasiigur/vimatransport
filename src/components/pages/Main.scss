@@ -1,4 +1,4 @@
-@import "./colors.scss";
+@import "../../styles/colors.scss";
 
 .Main {
   text-align: center;
@@ -9,7 +9,7 @@
   pointer-events: none;
 }
 
-.header {
+.Main-title {
   min-height: calc(100vh - 40px);
   display: flex;
   flex-direction: column;

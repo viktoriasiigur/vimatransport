@@ -1,6 +1,6 @@
-@import './colors.scss';
+@import '../../styles/colors.scss';
 
-nav {
+.Navbar-navigation {
   display: flex;
   justify-content: space-around;
   align-items: center;
