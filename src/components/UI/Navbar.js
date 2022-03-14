@@ -1,16 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
+import '../../styles/colors.scss';
 import './Navbar.scss';
+
+// const linkStyle = {
+//   textDecoration: 'none',
+//   textTransform: 'uppercase',
+// };
 
 const Navbar = () => {
   return (
     <div className="Navbar-navigation">
-      <Link component={Link} to="/">
+      <NavLink to="/">
         Avaleht
-      </Link>
-      <Link to="/contact">Kontakt</Link>
-      <Link to="/about">Meist</Link>
+      </NavLink>
+      <NavLink to="/contact">
+        Kontakt
+      </NavLink>
+      <NavLink to="/about">
+        Meist
+      </NavLink>
     </div>
   );
 };
