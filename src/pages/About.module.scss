@@ -4,10 +4,16 @@
   align-items: center;
   justify-content: center;
   text-align: start;
-  min-height: calc(100vh - 150px);
+  min-height: calc(100vh - 60px);
 }
 
 .text {
-  max-width: 400px;
+  max-width: 500px;
   line-height: 1.5;
+}
+
+.bus {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 20px;
 }

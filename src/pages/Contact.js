@@ -1,33 +1,47 @@
-import Card from "../components/UI/Card";
+import Card from "../components/Card";
 
 import classes from "./Contact.module.scss";
+import emailIcon from "../assets/icons/email.png";
+import phoneIcon from "../assets/icons/phone.png";
+import facebookIcon from "../assets/icons/facebook.png";
 
 const Contact = () => {
   return (
-    <Card>
-      <div className={classes.content}>
-        <table className={classes.table}>
-          <tr>
-            <td colSpan={2}>
-              <h3>Võta meiega ühendust:</h3>
-            </td>
-          </tr>
-          <tr>
-            <th>E-mail:</th>
-            <td>viktor.siigur@gmail.com</td>
-          </tr>
-          <tr>
-            <th>Telefon:</th>
-            <td>56631515</td>
-          </tr>
-          <tr>
-            <th>Facebook:</th>
-            <td>
-              <a href="https://www.facebook.com/ViMaTransport">ViMaTransport</a>
-            </td>
-          </tr>
-          <br></br>
-          <tr>
+    <div className={classes.content}>
+      <Card>
+        <h2>Võta meiega ühendust:</h2>
+        <div className={classes.contactLine}>
+          <img
+            className={classes.icon}
+            src={emailIcon}
+            alt="Emaili ikoon"
+          ></img>
+          viktor.siigur@gmail.com
+        </div>
+        <div className={classes.contactLine}>
+          <img
+            className={classes.icon}
+            src={phoneIcon}
+            alt="Telefoni ikoon"
+          ></img>
+          +372 56631515
+        </div>
+        <div className={classes.contactLine}>
+          <img
+            className={classes.icon}
+            src={facebookIcon}
+            alt="Telefoni ikoon"
+          ></img>
+          <a
+            href="https://www.facebook.com/ViMaTransport"
+            target="_blank"
+            rel="noreferrer"
+          >
+            ViMaTransport
+          </a>
+        </div>
+
+        {/* <tr>
             <td colSpan={2}>
               <h3>Ettevõtte andmed:</h3>
             </td>
@@ -39,10 +53,9 @@ const Contact = () => {
           <tr>
             <th>Registrikood:</th>
             <td>11499511</td>
-          </tr>
-        </table>
-      </div>
-    </Card>
+          </tr> */}
+      </Card>
+    </div>
   );
 };
 
