@@ -2,16 +2,11 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import '../../styles/colors.scss';
-import './Navbar.scss';
-
-// const linkStyle = {
-//   textDecoration: 'none',
-//   textTransform: 'uppercase',
-// };
+import classes from './Navbar.module.scss';
 
 const Navbar = () => {
   return (
-    <div className="Navbar-navigation">
+    <div className={classes.navbar}>
       <NavLink to="/">
         Avaleht
       </NavLink>

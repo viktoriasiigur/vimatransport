@@ -1,9 +1,9 @@
-import './Contact.scss';
+import classes from './Contact.module.scss';
 
 const Contact = () => {
   return (
-    <div className="Contact-content">
-      <table className="Contact-table">
+    <div className={classes.content}>
+      <table className={classes.table}>
         <tr>
           <td colSpan={2}>
             <h3>Võta meiega ühendust:</h3>

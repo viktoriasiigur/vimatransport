@@ -1,9 +1,9 @@
-import './About.scss';
+import classes from './About.module.scss';
 
 const About = () => {
   return (
-    <div className="About-content">
-      <div className="About-text">
+    <div className={classes.content}>
+      <div className={classes.text}>
         <h2>Kes me oleme?</h2>
         ViMa Transport (Vima Grupp OÜ) on väikefirma, mis korraldab väikebussiga
         bussireise ja väljasõite vastavalt tellimusele. Firma omanik ja

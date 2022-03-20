@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 
-import './Main.scss';
+import classes from './Main.module.scss';
 
 const Main = () => {
   return (
-    <div className="Main-content">
-      <img src={logo} className="Main-logo" alt="logo" />
-      <p className="Main-description">Transportteenused üle Eesti</p>
-      <div className="Main-link">
+    <div className={classes.content}>
+      <img src={logo} className={classes.logo} alt="logo" />
+      <p className={classes.description}>Transportteenused üle Eesti</p>
+      <div className={classes.button}>
         <Link to="/contact">
           <div>Telli sõit</div>
         </Link>

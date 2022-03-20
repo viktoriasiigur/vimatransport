@@ -1,6 +1,6 @@
 @import '../../styles/colors.scss';
 
-.Navbar-navigation {
+.navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -9,15 +9,7 @@
   margin: 0 auto;
 
   a {
-    &:link,
-    &:visited,
-    &:active {
-      text-decoration: none;
-      color: $light-grey;
-    }
-
-    &:hover {
-      color: $black;
-    }
+    text-decoration: none;
+    color: $light-grey;
   }
 }

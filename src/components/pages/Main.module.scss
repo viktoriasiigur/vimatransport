@@ -1,11 +1,11 @@
 @import '../../styles/colors.scss';
 
-.Main-logo {
+.logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-.Main-content {
+.content {
   min-height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
@@ -15,11 +15,11 @@
   color: $white;
 }
 
-.Main-description {
+.description {
   margin: 50px auto;
 }
 
-.Main-link {
+.button {
   font-size: 17px;
   font-weight: 500;
   background-color: $blue;
@@ -30,28 +30,22 @@
 
   &:hover {
     background-color: $hover-blue;
-    cursor: pointer;
   }
-
+  
   a {
+    text-decoration: none;
+    color: $white;
     line-height: 50px;
-    &:link,
-    &:visited,
-    &:hover
-    &:active {
-      text-decoration: none;
-      color: $white;
-    }
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .Main-logo {
-    animation: Main-logo-spin 1 5s ease-in-out;
+  .logo {
+    animation: logo-spin 1 5s ease-in-out;
   }
 }
 
-@keyframes Main-logo-spin {
+@keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
