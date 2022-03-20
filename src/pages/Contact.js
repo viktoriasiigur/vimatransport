@@ -1,11 +1,11 @@
-import Card from '../components/Card';
+import Card from "../components/Card";
 
-import classes from './Contact.module.scss';
+import classes from "./Contact.module.scss";
 
-import emailIcon from '../assets/icons/email.png';
-import phoneIcon from '../assets/icons/phone.png';
-import facebookIcon from '../assets/icons/facebook.png';
-import viktor from '../assets/viktor.jpeg';
+import emailIcon from "../assets/icons/email.png";
+import phoneIcon from "../assets/icons/phone.png";
+import facebookIcon from "../assets/icons/facebook.png";
+import viktor from "../assets/viktor.jpeg";
 
 const Contact = () => {
   return (

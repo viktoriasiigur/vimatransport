@@ -1,6 +1,6 @@
 import Card from "../components/Card";
 import classes from "./About.module.scss";
-import bus from "../assets/ford.jpeg"
+import bus from "../assets/ford.jpeg";
 
 const About = () => {
   return (
