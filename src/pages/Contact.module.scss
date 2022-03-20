@@ -1,3 +1,5 @@
+@import '../styles/colors.scss';
+
 .content {
   display: flex;
   flex-direction: column;
@@ -9,10 +11,28 @@
 
 .icon {
   max-width: 30px;
-  margin: 5px 10px;
+  margin: 10px 10px;
 }
 
 .contactLine {
   display: flex;
   align-items: center;
+}
+
+.contactLines {
+  margin: 20px 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+
+.picture {
+  max-width: 100px;
+  width: 100%;
+  border-radius: 50px;
+  border: 2px solid $blue;
 }
