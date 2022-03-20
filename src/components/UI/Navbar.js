@@ -7,13 +7,13 @@ import classes from './Navbar.module.scss';
 const Navbar = () => {
   return (
     <div className={classes.navbar}>
-      <NavLink to="/">
+      <NavLink className={(navData) => navData.isActive ? classes.active: classes.inactive } to="/">
         Avaleht
       </NavLink>
-      <NavLink to="/contact">
+      <NavLink className={(navData) => navData.isActive ? classes.active : classes.inactive } to="/contact">
         Kontakt
       </NavLink>
-      <NavLink to="/about">
+      <NavLink className={(navData) => navData.isActive ? classes.active : classes.inactive } to="/about">
         Meist
       </NavLink>
     </div>

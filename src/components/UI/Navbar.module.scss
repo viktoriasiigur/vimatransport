@@ -1,5 +1,13 @@
 @import '../../styles/colors.scss';
 
+.active {
+  color: $black;
+}
+
+.inactive {
+  color: $light-grey;
+}
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -10,6 +18,10 @@
 
   a {
     text-decoration: none;
-    color: $light-grey;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $black;
+    }
   }
 }
