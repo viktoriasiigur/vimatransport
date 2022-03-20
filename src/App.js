@@ -1,10 +1,10 @@
-import React from 'react';
-import Navbar from './components/UI/Navbar';
-import Main from './components/pages/Main';
-import About from './components/pages/About';
-import Contact from './components/pages/Contact';
+import React from "react";
+import Navbar from "./components/UI/Navbar";
+import Main from "./pages/Main";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/meist" element={<About />} />
+        <Route path="/kontakt" element={<Contact />} />
       </Routes>
     </>
   );
